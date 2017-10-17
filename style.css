@@ -1,7 +1,51 @@
 *{
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 body{
     direction: rtl;
+    font-family: 'Arial (Hebrew)', Arial;
     text-align: right;
+    line-height: 1;
 }
+#contaner{
+ width: 900px;
+ margin: auto;
+}
+#contaner header
+    {
+        width: 100%;
+        height: 105px;
+        position: relative;
+        background-color: #999;
+    }
+header >img
+    {
+        position: absolute;
+        width: 142px;
+        bottom: -20px;
+        right: -8px;
+    }
+.menu
+    {
+        height: 33px;
+        position: relative;
+        top: 70px;
+        margin: 0 143px 0 0;
+    }    
+.menu li 
+    {
+        display: inline;
+        border-left: 2px solid #ddd;
+    }
+.menu li a
+    {
+        display: inline-block;
+        color: #fff;
+        font-size: 15px;
+        padding: 0 8px 0 8px;
+        font-weight: bold;
+        height: 100%;
+        cursor: pointer;
+    }    
