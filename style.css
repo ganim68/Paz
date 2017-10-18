@@ -9,17 +9,75 @@ body{
     text-align: right;
     line-height: 1;
 }
-#contaner{
- width: 900px;
- margin: auto;
+body >header
+    {
+        position: relative;
+        width: 100%;
+        height: 105px;
+        background-color: #999;
+    }
+.contaner
+    {
+        position: relative;
+        width: 900px;
+        margin: auto;                
 }
-#contaner header
+body >.contaner
+    {
+        top:-105px;
+    }
+.contaner header
     {
         width: 100%;
         height: 105px;
         position: relative;
         background-color: #999;
     }
+header >a
+    {
+        position: absolute;
+        top: 22px;
+        left: 180px;
+        font-size: 12px;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+    }
+#searchbox
+    {
+        position: absolute;
+        left: 10px;
+        top: 20px;
+        width: 152px;
+        height: 19px;
+        border-top-right-radius:5px; 
+        background-color: white;
+    } 
+#input
+    {
+        float: right;
+        width: 132px;
+        height: 19px;
+    } 
+input
+    {
+        position: relative;
+        width: 126px;
+        height: 14px;
+        right:4px;
+        background: transparent;
+        border: 0 none;
+        font-family: Arial,Arial, Helvetica, sans-serif;
+        font-size: 12px;
+    }    
+#searchbox a 
+    {
+        /*display: inline-block;*/
+        float: left;
+        width: 19px;
+        height: 19px;
+        background: url(images/search_button.png);
+    }          
 header >img
     {
         position: absolute;
@@ -31,12 +89,13 @@ header >img
     {
         height: 33px;
         position: relative;
-        top: 60px;
+        top: 72px;
         margin: 0 143px 0 0;
     }    
 .menu li 
     {
         display: inline-block;
+        margin: 0 8px 0 8px;
         /*position: relative;*/
         /*border-left: 2px solid #ddd;*/
     }
@@ -191,4 +250,13 @@ header >img
 #row2 .tab3 a
     {
         right: 25px;
+    }
+footer
+    {
+        width: 100%;
+        height: 38px;
+        position: fixed;
+        z-index: 999999;
+        bottom: 0px;
+        background: url(images/footer_bg.png) repeat-x 0 0;
     }
