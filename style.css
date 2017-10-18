@@ -36,9 +36,14 @@ header >img
     }    
 .menu li 
     {
-        display: inline;
-        border-left: 2px solid #ddd;
+        display: inline-block;
+        /*position: relative;*/
+        /*border-left: 2px solid #ddd;*/
     }
+.menu ul >li
+    {
+        border-bottom: 1px solid #ddd;
+    }    
 .menu li a
     {
         display: inline-block;
@@ -50,6 +55,43 @@ header >img
         height: 100%;
         cursor: pointer;
     } 
+.drop 
+    { 
+        display: none; 
+        position: absolute; 
+        top: 18px;
+        box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+        z-index: 1000; 
+    }
+    .menu li:hover > ul 
+    { 
+        display:list-item;
+    }
+
+    .drop li:hover 
+    { 
+        display:list-item;
+        background-color: #aaa;
+    }   
+.drop li
+    { 
+        /*width:80px; */
+        float:none;
+        display :block;
+        position: relative;
+        /*border: 1px solid green;*/ 
+        background-color: #999;
+        font-family: arial;
+        font-size: 12px;
+    }    
+.drop li a
+    {
+        display:inline-block; 
+        padding-top: 5px;
+        padding-bottom: 5px;
+        color: white; 
+        text-decoration: none; 
+    }   
 #row1
     {
         height: 355px;
