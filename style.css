@@ -58,17 +58,12 @@ header >a
         float: right;
         width: 132px;
         height: 19px;
-    } 
-input
+    }
+#input input 
     {
-        position: relative;
-        width: 126px;
-        height: 14px;
-        right:4px;
-        background: transparent;
-        border: 0 none;
-        font-family: Arial,Arial, Helvetica, sans-serif;
-        font-size: 12px;
+        float: left;
+        width: 128px;
+        height: 19px;   
     }    
 #searchbox a 
     {
@@ -95,7 +90,7 @@ header >img
 .menu li 
     {
         display: inline-block;
-        margin: 0 8px 0 8px;
+        margin: 0 ;
         /*position: relative;*/
         /*border-left: 2px solid #ddd;*/
     }
@@ -106,14 +101,22 @@ header >img
 .menu li a
     {
         display: inline-block;
-        color: #fff;
+        color: #fff;     
         text-decoration: none;
-        font-size: 15px;
-        padding: 0 8px 0 8px;
+        font-size: 14px;     
         font-weight: bold;
         height: 100%;
         cursor: pointer;
     } 
+ .menu >li >a
+    {
+        padding-left: 7px;
+        border-left: 2px solid #ddd;
+    }
+header .menu >li >a
+    {
+        padding: 0 15px 0 15px;
+    }        
 .drop 
     { 
         display: none; 
@@ -256,7 +259,125 @@ footer
         width: 100%;
         height: 38px;
         position: fixed;
-        z-index: 999999;
+        /*z-index: 999999;*/
         bottom: 0px;
         background: url(images/footer_bg.png) repeat-x 0 0;
     }
+footer .contaner
+    {
+        height: 100%;
+    }
+footer .menu
+    {
+       top: 14px;
+       margin:  0;
+       padding: 0;
+
+    }
+.red-item a {
+       color: #ff0000;
+    }    
+.content
+    {
+        width: 900px;
+        margin-top: 30px;
+    }    
+.links
+    {
+       margin-right:143px;
+      
+       font-size:0.90em; 
+       color: #888;
+    }    
+a[href*="index"]
+    {
+        text-decoration: none; 
+        font-size:0.80em;       
+    } 
+.links h3
+    {
+        margin-top:20px; 
+    }   
+.right-div
+    {
+        float: right;
+        margin: 20px 143px 0 24px;
+        padding: 17px 17px 0 5px;
+        color: #72716d;
+        border-top-right-radius: 25px;
+        background: linear-gradient( #eee,#fff);
+        font-size: 12px;
+        width: 385px;
+        border-style: solid solid none solid;
+        border-width: 1px;
+        border-color: #CCCCCC;
+        min-height: 332px;
+
+    }
+.left-div
+    {
+        float: left;
+    }     
+.cubes
+    {
+        width :292px;
+        height: 175px;
+        background: url("images/cube_bg.png");
+        margin-bottom: 5px;
+        font-size: 12px;
+        padding: 17px 17px 0 5px;
+    }
+.cubes h3,.right-div h3
+    {
+        font-weight: bold;
+        color: #005ca0;
+        /*padding: 20px 20px 0 0;*/
+    }
+.cubes div
+    {
+        margin: 15px 0 0 0;
+    }
+.par1
+    {
+        display: block;
+        color: #6d6d6d;
+        font-size: 13px;
+        font-weight: bold;
+        line-height: 1.2;
+    }
+    .par2
+    {
+        display: block;
+        color: #72716d;
+        font-size: 12px;
+        font-weight: normal;
+        line-height: 1.2;
+        margin-top: 5px ;
+    }
+form
+    {
+        margin-right: 35px;
+    }    
+form label
+    {
+        
+        width: 30%;
+        float: right;
+    }    
+form input
+    {
+        width:50%;
+        float: right;
+        margin-bottom: 10px;
+    }
+input[type="submit"]
+    {
+        margin-right: 220px;
+        width: auto;
+        padding: 3px 10px;
+        background: rgb(0, 162, 255);
+    }
+textarea
+    {
+        
+    }    
